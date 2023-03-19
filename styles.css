@@ -5,10 +5,9 @@
 }
 
 footer {
-  background-color: #181818;
-  color: #f2f2f2;
-  font-size: 16px;
-  font-weight: lighter;
+  background-color: #262626;
+  color: #fff;
+  font-family: Arial, sans-serif;
   padding: 60px 50px;
 }
 
@@ -18,78 +17,98 @@ footer {
   justify-content: space-between;
 }
 
-.top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
 .logo-details {
   display: flex;
   align-items: center;
 }
 
-.logo_name {
+.logo-details .logo_name {
   font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-left: 10px;
+  font-weight: 600;
 }
 
-.media-icons a {
-  color: #f2f2f2;
-  margin-left: 20px;
+.top .media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.top .media-icons a {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.top .media-icons a:hover {
+  transform: scale(1.2);
 }
 
 .link-boxes {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
-.box {
-  flex-basis: 30%;
-  max-width: 30%;
+.link-box {
+  flex-basis: 20%;
 }
 
-.box h3 {
+.link-box h3 {
   font-size: 20px;
-  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.link-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-box ul li {
   margin-bottom: 10px;
 }
 
-.box ul li {
-  margin-bottom: 10px;
+.link-box ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.link-box ul li a:hover {
+  transform: translateX(10px);
 }
 
 .bottom-details {
+  border-top: 1px solid #666;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #777;
-  padding-top: 20px;
-  margin-top: 20px;
-  font-size: 14px;
+  padding: 20px 0 0;
+  margin-top: 30px;
 }
 
 .bottom-details p {
-  margin: 0;
+  font-size: 14px;
 }
 
-.bottom-details a {
-  color: #f2f2f2;
+.bottom-details .contact-box {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-details .contact-box span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.bottom-details .contact-box a {
+  font-size: 16px;
+  color: #fff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .box {
-    flex-basis: 45%;
-    max-width: 45%;
-    margin-bottom: 30px;
-  }
+.bottom-details .contact-box a:hover {
+  transform: translateX(10px);
 }
