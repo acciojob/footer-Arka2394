@@ -34,9 +34,7 @@
 .link-boxes{
 	display:flex;
 }
-.media-icons a{
-	border-radius:50px;
-}
+
 .media-icons{
     height: 50px;
     width: 50px;
@@ -46,7 +44,10 @@
     margin: 10px;
     line-height:65px;
     font-size: 10px;
-display:flex;
+    display:flex;
+}
+.media-icons a{
+	border-radius:50px;
 }
 
 #facebook{
