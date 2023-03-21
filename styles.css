@@ -34,6 +34,9 @@
 .link-boxes{
 	display:flex;
 }
+.media-icons a{
+	
+}
 .media-icons{
     height: 50px;
     width: 50px;
